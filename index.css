@@ -1,0 +1,64 @@
+* { margin: 0;
+padding: 0;
+box-sizing:border-box ;
+}
+.main {
+    padding: 4px;
+}
+
+.navigation{
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    display: flex; /* use flexbox for layout */
+    justify-content: space-between;
+    position: sticky;
+    padding: 14px;
+    z-index: 400;
+    align-items: center;
+}
+.logo {
+    font-size: 18px;
+    color: black;
+    padding: 4px;
+    gap: 8px;
+    
+    
+}
+.logo:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+.logo {
+    font-size: 20px;
+    color: black;
+    padding: 4px;
+    font-weight: bold;
+
+}
+.listnavigation {
+    display: flex; /* use flex box for layout */
+    list-style: none;
+    gap: 12px;
+    padding: 8px;
+
+}
+.HeroSection {
+       background-image: url('https://www.w3schools.com/w3images/architect.jpg');
+       background-size: cover;
+       background-position: center;
+       height: 95vh;
+       
+}
+.herosection-text {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#brhover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
