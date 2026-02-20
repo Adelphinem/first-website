@@ -1,4 +1,4 @@
-* { margin: 0;
+* * { margin: 0;
 padding: 0;
 box-sizing:border-box ;
 }
@@ -10,7 +10,7 @@ box-sizing:border-box ;
     border: 1px solid black;
     background-color: white;
     box-shadow: 0 0 5px black;
-    display: flex;
+    display: flex; /* use flexbox for layout */
     justify-content: space-between;
     position: sticky;
     padding: 14px;
@@ -37,7 +37,7 @@ box-sizing:border-box ;
 
 }
 .listnavigation {
-    display: flex;
+    display: flex; /* use flex box for layout */
     list-style: none;
     gap: 12px;
     padding: 8px;
@@ -48,18 +48,78 @@ box-sizing:border-box ;
        background-size: cover;
        background-position: center;
        height: 95vh;
-       
+       margin-left: 40px;
+       margin-right: 40px;
 }
 .herosection-text {
-    color: white;
+    color: black;
     padding: 20px;
     text-align: center;
     position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+};
+.herosection-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
+
 #brhover {
     background-color: rgba(0, 0, 0, 0.5);
     
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 32px;
+    
+}
+.projects-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.project-image1 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.project-image2 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.project-image3 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: black;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
 }
